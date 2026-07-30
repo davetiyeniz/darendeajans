@@ -44,8 +44,10 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="Darende Ajans ana sayfa">
-    <span class="brand-mark" aria-hidden="true">DR</span>
-    <span class="brand-type"><strong>DARENDE</strong><span>AJANS</span></span>
+    <picture>
+      <source type="image/webp" srcset="assets/images/logo-darende-ajans.webp">
+      <img class="brand-logo" src="assets/images/logo-darende-ajans.png" width="240" height="74" alt="Darende Ajans">
+    </picture>
   </a>
       <nav class="main-nav" id="main-navigation" aria-label="Ana menü">
         <ul class="nav-list">
@@ -88,7 +90,7 @@
       <div class="row hero-grid">
         <div class="col-12 col-lg-7 hero-copy">
           <p class="eyebrow">Darende · Malatya · Türkiye</p>
-          <h1>Darende’nin dijital gücünü birlikte büyütelim.</h1>
+          <h1 class="hero-title"><span>Darende’nin</span><span>dijital gücünü</span><span>birlikte büyütelim.</span></h1>
           <p class="rotating-line">Markanız için <span class="rotating-word">Web Tasarım</span></p>
           <p class="lead">Hızlı web deneyimi, yerel görünürlük ve ölçülebilir reklamla işletmenizin dijital yolunu sadeleştiriyoruz.</p>
           <div class="button-row">
@@ -99,16 +101,28 @@
             <span>Şeffaf kapsam</span><span>Sahte vaat yok</span><span>Mobil öncelikli</span>
           </div>
         </div>
-        <div class="col-12 col-lg-5 hero-visual" aria-label="Darende Ajans marka görseli">
-          <span class="hero-orbit" aria-hidden="true"></span><span class="hero-orbit" aria-hidden="true"></span>
-          <div class="hero-brand-card">
-            <picture>
-              <source type="image/avif" srcset="assets/images/brand-wordmark-480.avif 480w, assets/images/brand-wordmark-720.avif 720w" sizes="(max-width: 767px) 86vw, 41vw">
-              <source type="image/webp" srcset="assets/images/brand-wordmark-480.webp 480w, assets/images/brand-wordmark-720.webp 720w" sizes="(max-width: 767px) 86vw, 41vw">
-              <img src="assets/images/brand-wordmark-720.webp" width="720" height="222" fetchpriority="high" decoding="async" alt="Darende Ajans altın renkli DR amblemi ve kelime markası">
-            </picture>
+        <div class="col-12 col-lg-5 hero-visual" aria-label="Darende’den dijitale açılan ışık ağı">
+          <div class="hero-stage" data-kinetic>
+            <span class="stage-grid" aria-hidden="true"></span>
+            <span class="portal-ring portal-ring-a" aria-hidden="true"></span>
+            <span class="portal-ring portal-ring-b" aria-hidden="true"></span>
+            <span class="portal-ring portal-ring-c" aria-hidden="true"></span>
+            <span class="light-comet light-comet-a" aria-hidden="true"></span>
+            <span class="light-comet light-comet-b" aria-hidden="true"></span>
+            <div class="signal-core">
+              <span>DİJİTAL SİNYAL</span>
+              <strong>DARENDE</strong>
+              <em aria-hidden="true">↗</em>
+              <strong>YARIN</strong>
+              <small>STRATEJİ · TASARIM · BÜYÜME</small>
+            </div>
+            <a class="service-node node-web" href="darende-web-tasarim/"><span>01</span>Web Tasarım<small>Deneyim</small></a>
+            <a class="service-node node-seo" href="darende-seo/"><span>02</span>SEO<small>Görünürlük</small></a>
+            <a class="service-node node-ads" href="darende-google-ads/"><span>03</span>Google Ads<small>Talep</small></a>
+            <a class="service-node node-social" href="darende-sosyal-medya-yonetimi/"><span>04</span>Sosyal Medya<small>Bağ</small></a>
+            <div class="stage-status"><i aria-hidden="true"></i><span>Işık ağı aktif</span><strong>Darende → Dijital</strong></div>
+            <span class="stage-particle p-1" aria-hidden="true"></span><span class="stage-particle p-2" aria-hidden="true"></span><span class="stage-particle p-3" aria-hidden="true"></span><span class="stage-particle p-4" aria-hidden="true"></span><span class="stage-particle p-5" aria-hidden="true"></span><span class="stage-particle p-6" aria-hidden="true"></span><span class="stage-particle p-7" aria-hidden="true"></span><span class="stage-particle p-8" aria-hidden="true"></span><span class="stage-particle p-9" aria-hidden="true"></span><span class="stage-particle p-10" aria-hidden="true"></span><span class="stage-particle p-11" aria-hidden="true"></span><span class="stage-particle p-12" aria-hidden="true"></span><span class="stage-particle p-13" aria-hidden="true"></span><span class="stage-particle p-14" aria-hidden="true"></span>
           </div>
-          <div class="hero-badge"><strong>Yerelden güç alın</strong>Dijitalde daha net, hızlı ve güvenilir görünür olun.</div>
         </div>
       </div>
     </div>
@@ -125,7 +139,7 @@
   <section class="section">
     <div class="container">
       <div class="section-heading"><p class="eyebrow">Dijitalde fark yaratın</p><h2>İhtiyacınız kadar kapsamlı, hedefiniz kadar net.</h2><p class="lead">Hizmetleri ayrı paketler gibi değil, müşteri yolculuğunun birbirini tamamlayan parçaları olarak planlıyoruz.</p></div>
-      <div class="card-grid"><article class="service-card reveal">
+      <div class="card-grid home-service-grid"><article class="service-card reveal">
       <span class="card-number">01</span>
       <h3>Web Tasarım</h3>
       <p>İşletmenizi yalnızca anlatan değil, müşterinin doğru bilgiye hızla ulaşıp güvenle iletişim kurmasını sağlayan bir dijital merkez tasarlıyoruz.</p>
@@ -319,8 +333,10 @@
       <div class="footer-grid">
         <div>
           <a class="brand" href="./" aria-label="Darende Ajans ana sayfa">
-    <span class="brand-mark" aria-hidden="true">DR</span>
-    <span class="brand-type"><strong>DARENDE</strong><span>AJANS</span></span>
+    <picture>
+      <source type="image/webp" srcset="assets/images/logo-darende-ajans.webp">
+      <img class="brand-logo" src="assets/images/logo-darende-ajans.png" width="240" height="74" alt="Darende Ajans">
+    </picture>
   </a>
           <p style="margin-top:20px">Darende’den dijitale açılan ışık: hızlı web deneyimi, yerel görünürlük ve ölçülebilir reklam çözümleri.</p>
           <p class="small">Hizmet bölgesi: Darende, Malatya ve Türkiye geneli</p>
@@ -363,6 +379,8 @@
       </div>
     </div>
   </footer>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor-ring" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
   <button class="back-to-top" type="button" aria-label="Sayfanın başına dön">↑</button>
 </body>
 </html>

@@ -1,11 +1,11 @@
 # Otomatik test sonuçları
 
-- Tarih: 30.07.2026 18:09:45
+- Tarih: 31.07.2026 00:54:59
 - Ana sayfa: 20
-- Toplam dosya: 106
-- Görsel dosyası: 58
-- Kontrol: 1405
-- Başarılı: 1405
+- Toplam dosya: 105
+- Görsel dosyası: 60
+- Kontrol: 1486
+- Başarılı: 1486
 - Başarısız: 0
 
 Tüm statik yapı, bağlantı, SEO ve yapılandırma kontrolleri başarılıdır.

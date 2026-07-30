@@ -1,34 +1,23 @@
-# Tarayıcı kalite kontrolü
+# Tarayıcı ve hareket sistemi kalite kontrolü
 
-Test tarihi: 30 Temmuz 2026
-
-## Kapsam
-
-- 20 ana URL, 360 px ve 1.440 px genişlikte gerçek tarayıcıda açıldı.
-- Ana sayfa, web tasarım, işletme rehberi ve iletişim sayfaları ayrıca 768 px ve 1.024 px genişlikte açıldı.
-- Toplam 48 responsive sayfa görünümü denetlendi.
-- 20 ana URL’nin tamamı yerel HTTP sunucusunda 200 durum kodu verdi.
-
-## Sonuçlar
-
-- Yatay taşma: 0
+- Tarih: 31.07.2026
+- Kontrol edilen ana sayfa: 20
+- Masaüstü görünüm: 1440 × 1000
+- Mobil görünüm: 390 × 844
 - Kırık görsel: 0
-- Eksik veya birden fazla H1: 0
-- Konsol error/warning: 0
-- Eksik `alt`: 0
-- Etiketsiz form alanı: 0
-- İsimsiz buton/bağlantı: 0
-- Yinelenen `id`: 0
-- Ana landmark hatası: 0
+- Yatay taşma: 0
+- Tarayıcı konsol hatası/uyarısı: 0
+- Eksik `h1`, ana içerik, üstbilgi veya altbilgi: 0
+- Mobil menü: açma ve kapama doğrulandı
+- Kahraman sahnesi hizmet bağlantıları: doğrulandı
+- Telefon ve e-posta bağlantıları: otomatik paket testinde doğrulandı
 
-## Etkileşim testleri
+## Görsel hareket sistemi
 
-- Mobil menü açıldı; `aria-expanded="true"` ve sayfa kaydırma kilidi doğrulandı.
-- Dijital skor aracı 5 yanıtla çalıştırıldı; şeffaf formüle göre 60/100 sonucu ve eksik üç hizmet önerisi üretildi.
-- İletişim formu dolduruldu. Endpoint boşken veri göndermedi ve sahte başarı mesajı göstermedi; telefon/e-posta kanalına yönlendirdi.
-- Hava durumu butonu Open-Meteo’dan “Darende, Malatya” eşleşmesiyle güncel veri aldı; kaynak ve güncelleme saati gösterildi.
-- Menü, CTA, telefon ve e-posta bağlantıları DOM ve hedef değerleriyle doğrulandı.
+Ana sayfada 18 CSS anahtar-kare dizisi ve JavaScript destekli etkileşimler bulunur. Sistem; sinyal halkaları, yörünge düğümleri, ışık izleri, parçacıklar, kayan hizmet bandı, bölüm girişleri, kart derinliği, manyetik düğmeler, ilerleme çizgisi ve sayaç hareketlerini kapsar.
 
-## JavaScript kapalı kullanım
+`prefers-reduced-motion` erişilebilirlik tercihi etkinse yoğun hareketler bilinçli olarak durdurulur; içerik görünür ve kullanılabilir kalır.
 
-Ana metinler ve bağlantılar ilk HTML içindedir. Mobil navigasyon için `noscript` stili bulunur; skor, hava ve form davranışları ilerici geliştirme olarak JavaScript gerektirir.
+## Statik paket
+
+Tüm sayfalar yerel varlık yollarıyla açıldı. Logo üstbilgi ve altbilgi marka öğesi olarak kullanıldı; ana sayfadaki eski logo kartı kaldırıldı.

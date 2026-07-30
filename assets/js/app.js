@@ -12,6 +12,25 @@
     document.documentElement.classList.add("low-power");
   }
 
+  const siteHeader = $(".site-header");
+  const scrollProgress = $(".scroll-progress span");
+  let scrollFrame = 0;
+  const updateScrollEffects = () => {
+    const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
+    if (scrollProgress) scrollProgress.style.setProperty("--scroll-progress", String(progress));
+    if (siteHeader) siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+    scrollFrame = 0;
+  };
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!scrollFrame) scrollFrame = requestAnimationFrame(updateScrollEffects);
+    },
+    { passive: true }
+  );
+  updateScrollEffects();
+
   const menuButton = $(".menu-button");
   const mainNav = $(".main-nav");
 
@@ -65,6 +84,9 @@
   }
 
   const revealItems = $$(".reveal");
+  revealItems.forEach((item, index) => {
+    item.style.setProperty("--reveal-order", String(index % 6));
+  });
   if ("IntersectionObserver" in window && !reduceMotion) {
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -99,6 +121,79 @@
         card.style.transform = "";
       });
     });
+  }
+
+  const kineticStage = $("[data-kinetic]");
+  if (kineticStage && !reduceMotion && !lowPower && window.matchMedia("(pointer:fine)").matches) {
+    let stageFrame = 0;
+    kineticStage.addEventListener("pointermove", (event) => {
+      if (stageFrame) cancelAnimationFrame(stageFrame);
+      stageFrame = requestAnimationFrame(() => {
+        const rect = kineticStage.getBoundingClientRect();
+        const x = ((event.clientX - rect.left) / rect.width - 0.5) * 34;
+        const y = ((event.clientY - rect.top) / rect.height - 0.5) * 34;
+        kineticStage.style.setProperty("--stage-x", `${x}px`);
+        kineticStage.style.setProperty("--stage-y", `${y}px`);
+      });
+    });
+    kineticStage.addEventListener("pointerleave", () => {
+      if (stageFrame) cancelAnimationFrame(stageFrame);
+      kineticStage.style.setProperty("--stage-x", "0px");
+      kineticStage.style.setProperty("--stage-y", "0px");
+    });
+  }
+
+  if (!reduceMotion && !lowPower && window.matchMedia("(pointer:fine)").matches) {
+    $$(".button").forEach((button) => {
+      button.classList.add("magnetic");
+      button.addEventListener("pointermove", (event) => {
+        const rect = button.getBoundingClientRect();
+        const x = (event.clientX - rect.left - rect.width / 2) * 0.12;
+        const y = (event.clientY - rect.top - rect.height / 2) * 0.16;
+        button.style.transform = `translate3d(${x}px, ${y - 2}px, 0)`;
+      });
+      button.addEventListener("pointerleave", () => {
+        button.style.transform = "";
+      });
+    });
+
+    const cursorRing = $(".cursor-ring");
+    const cursorDot = $(".cursor-dot");
+    if (cursorRing && cursorDot) {
+      document.documentElement.classList.add("cursor-enabled");
+      let mouseX = -100;
+      let mouseY = -100;
+      let ringX = -100;
+      let ringY = -100;
+      let cursorAnimating = true;
+      document.addEventListener(
+        "pointermove",
+        (event) => {
+          mouseX = event.clientX;
+          mouseY = event.clientY;
+          cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+        },
+        { passive: true }
+      );
+      document.addEventListener("pointerover", (event) => {
+        cursorRing.classList.toggle(
+          "is-active",
+          Boolean(event.target.closest("a, button, input, select, textarea, summary"))
+        );
+      });
+      const animateCursor = () => {
+        if (!cursorAnimating) return;
+        ringX += (mouseX - ringX) * 0.17;
+        ringY += (mouseY - ringY) * 0.17;
+        cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
+        requestAnimationFrame(animateCursor);
+      };
+      document.addEventListener("visibilitychange", () => {
+        cursorAnimating = !document.hidden;
+        if (cursorAnimating) requestAnimationFrame(animateCursor);
+      });
+      requestAnimationFrame(animateCursor);
+    }
   }
 
   const scoreForm = $("#digital-score-form");
