@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">360 derece sanal tur görseli</title><desc id="desc">Darende Ajans için özgün vektörel konsept görsel</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11151E"/><stop offset="1" stop-color="#080A0F"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#2FA47D" stop-opacity=".75"/><stop offset="1" stop-color="#2FA47D" stop-opacity="0"/></radialGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2FA47D"/><stop offset="1" stop-color="#D9A441"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="25" flood-color="#000" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1200" height="900" rx="60" fill="url(#bg)"/>
+<circle cx="220" cy="180" r="360" fill="url(#glow)" opacity=".25"/>
+<circle cx="1000" cy="760" r="310" fill="url(#glow)" opacity=".14"/>
+<path d="M0 710 Q220 610 410 690 T820 650 T1200 700 V900 H0Z" fill="#151B25"/>
+<g filter="url(#shadow)">
+<g transform="translate(100 125)"><path d="M110 180L510 70l400 110v390L510 690 110 570z" fill="#151D28" stroke="#fff" stroke-opacity=".16"/><path d="M510 70v620M110 180l400 150 400-150M510 330v360" stroke="#fff" stroke-opacity=".12" stroke-width="4"/><rect x="170" y="240" width="210" height="250" rx="20" fill="#202B39"/><rect x="640" y="240" width="210" height="250" rx="20" fill="#202B39"/><path d="M430 470h160v220H430z" fill="#0E141D"/><circle cx="300" cy="355" r="25" fill="#F47721"/><circle cx="750" cy="355" r="25" fill="#D9A441"/><circle cx="510" cy="250" r="25" fill="#2FA47D"/><g fill="none" stroke="#fff" stroke-width="4" opacity=".7"><circle cx="300" cy="355" r="45"/><circle cx="750" cy="355" r="45"/><circle cx="510" cy="250" r="45"/></g><path d="M330 760c120 75 240 75 360 0M300 720c150 120 300 120 450 0" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round"/><path d="M300 720l30-5-5 30M750 720l-30-5 5 30" fill="none" stroke="#D9A441" stroke-width="8"/></g></g>
+<rect x="40" y="40" width="1120" height="820" rx="44" fill="none" stroke="#fff" stroke-opacity=".08"/>
+</svg>

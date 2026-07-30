@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Reklam filmi prodüksiyon görseli</title><desc id="desc">Darende Ajans için özgün vektörel konsept görsel</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11151E"/><stop offset="1" stop-color="#080A0F"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#F47721" stop-opacity=".75"/><stop offset="1" stop-color="#F47721" stop-opacity="0"/></radialGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F47721"/><stop offset="1" stop-color="#D9A441"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="25" flood-color="#000" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1200" height="900" rx="60" fill="url(#bg)"/>
+<circle cx="220" cy="180" r="360" fill="url(#glow)" opacity=".25"/>
+<circle cx="1000" cy="760" r="310" fill="url(#glow)" opacity=".14"/>
+<path d="M0 710 Q220 610 410 690 T820 650 T1200 700 V900 H0Z" fill="#151B25"/>
+<g filter="url(#shadow)">
+<g transform="translate(120 145)"><rect x="160" y="170" width="540" height="330" rx="40" fill="#10151E" stroke="#fff" stroke-opacity=".18"/><circle cx="430" cy="335" r="120" fill="#07090D" stroke="#2D3747" stroke-width="22"/><circle cx="430" cy="335" r="78" fill="url(#accent)" opacity=".8"/><circle cx="430" cy="335" r="34" fill="#0B0D12"/><rect x="665" y="245" width="150" height="175" rx="28" fill="#171F2A"/><path d="M815 275l125-85v290l-125-85z" fill="#1E2938"/><rect x="230" y="100" width="250" height="80" rx="22" fill="#151D28"/><circle cx="270" cy="140" r="20" fill="#F47721"/><rect x="305" y="128" width="120" height="20" rx="10" fill="#fff" opacity=".2"/><path d="M90 550L230 70M900 550L760 70" stroke="#D9A441" stroke-width="12" stroke-linecap="round" opacity=".65"/><circle cx="230" cy="70" r="48" fill="url(#glow)"/><circle cx="760" cy="70" r="48" fill="url(#glow)"/></g></g>
+<rect x="40" y="40" width="1120" height="820" rx="44" fill="none" stroke="#fff" stroke-opacity=".08"/>
+</svg>

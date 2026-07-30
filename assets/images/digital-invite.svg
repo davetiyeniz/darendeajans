@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Dijital nişan ve düğün davetiyesi</title><desc id="desc">Darende Ajans için özgün vektörel konsept görsel</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11151E"/><stop offset="1" stop-color="#080A0F"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#E75A89" stop-opacity=".75"/><stop offset="1" stop-color="#E75A89" stop-opacity="0"/></radialGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E75A89"/><stop offset="1" stop-color="#D9A441"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="25" flood-color="#000" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1200" height="900" rx="60" fill="url(#bg)"/>
+<circle cx="220" cy="180" r="360" fill="url(#glow)" opacity=".25"/>
+<circle cx="1000" cy="760" r="310" fill="url(#glow)" opacity=".14"/>
+<path d="M0 710 Q220 610 410 690 T820 650 T1200 700 V900 H0Z" fill="#151B25"/>
+<g filter="url(#shadow)">
+<g transform="translate(150 120)"><rect x="170" y="60" width="500" height="620" rx="42" fill="#F8F5EF"/><path d="M170 180l250 190 250-190" fill="#F0E4D4"/><path d="M170 680l250-270 250 270" fill="#E8D6C3"/><rect x="250" y="130" width="340" height="420" rx="28" fill="#FFF8EE" stroke="#D9A441" stroke-width="4"/><path d="M300 210c85-95 155-95 240 0" fill="none" stroke="#E75A89" stroke-width="8"/><circle cx="365" cy="248" r="42" fill="none" stroke="#D9A441" stroke-width="9"/><circle cx="475" cy="248" r="42" fill="none" stroke="#D9A441" stroke-width="9"/><text x="420" y="360" text-anchor="middle" fill="#0B0D12" font-family="Georgia" font-size="54" font-style="italic">S &amp; B</text><rect x="320" y="400" width="200" height="8" rx="4" fill="#D9A441"/><rect x="350" y="435" width="140" height="10" rx="5" fill="#0B0D12" opacity=".25"/><g transform="translate(650 160)"><circle cx="80" cy="80" r="80" fill="url(#accent)"/><path d="M80 40v50l36 24" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/></g></g></g>
+<rect x="40" y="40" width="1120" height="820" rx="44" fill="none" stroke="#fff" stroke-opacity=".08"/>
+</svg>

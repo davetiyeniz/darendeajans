@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Özel yazılım ve yönetim paneli</title><desc id="desc">Darende Ajans için özgün vektörel konsept görsel</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11151E"/><stop offset="1" stop-color="#080A0F"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#4E8BFF" stop-opacity=".75"/><stop offset="1" stop-color="#4E8BFF" stop-opacity="0"/></radialGradient>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4E8BFF"/><stop offset="1" stop-color="#D9A441"/></linearGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="25" flood-color="#000" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1200" height="900" rx="60" fill="url(#bg)"/>
+<circle cx="220" cy="180" r="360" fill="url(#glow)" opacity=".25"/>
+<circle cx="1000" cy="760" r="310" fill="url(#glow)" opacity=".14"/>
+<path d="M0 710 Q220 610 410 690 T820 650 T1200 700 V900 H0Z" fill="#151B25"/>
+<g filter="url(#shadow)">
+<g transform="translate(105 120)"><rect x="75" y="70" width="830" height="560" rx="38" fill="#0F141C" stroke="#fff" stroke-opacity=".16"/><rect x="115" y="110" width="180" height="480" rx="24" fill="#151D28"/><circle cx="205" cy="175" r="42" fill="url(#accent)"/><g fill="#fff" opacity=".15"><rect x="145" y="250" width="120" height="14" rx="7"/><rect x="145" y="300" width="100" height="14" rx="7"/><rect x="145" y="350" width="130" height="14" rx="7"/><rect x="145" y="400" width="90" height="14" rx="7"/></g><g transform="translate(335 110)"><rect width="530" height="150" rx="24" fill="#18222F"/><rect x="30" y="32" width="120" height="15" rx="7" fill="#fff" opacity=".18"/><text x="30" y="112" fill="#F8F5EF" font-family="Arial" font-size="54" font-weight="700">128</text><rect y="185" width="255" height="295" rx="24" fill="#18222F"/><rect x="285" y="185" width="245" height="295" rx="24" fill="#18222F"/><path d="M35 420l45-75 42 38 50-100 50 45" fill="none" stroke="#4E8BFF" stroke-width="11" stroke-linecap="round"/><circle cx="460" cy="330" r="70" fill="none" stroke="#2FA47D" stroke-width="28" stroke-dasharray="280 160" transform="rotate(-90 460 330)"/><circle cx="460" cy="330" r="14" fill="#F47721"/></g></g></g>
+<rect x="40" y="40" width="1120" height="820" rx="44" fill="none" stroke="#fff" stroke-opacity=".08"/>
+</svg>
