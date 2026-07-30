@@ -14,7 +14,7 @@
   const intro = $('.intro-screen');
   if (intro) {
     let seen = false;
-    try { seen = sessionStorage.getItem('darende-intro') === '1'; sessionStorage.setItem('darende-intro','1'); } catch (_) {}
+    try { seen = sessionStorage.getItem('darende-intro') === '1'; sessionStorage.setItem('darende-intro','1'); } catch {}
     setTimeout(() => intro.classList.add('hide'), reduced ? 0 : (seen ? 60 : 420));
   }
 
@@ -84,7 +84,7 @@
       const active = p === '/' ? currentPath === '/' : currentPath.startsWith(p);
       a.classList.toggle('active', active);
       if(active) a.setAttribute('aria-current','page');
-    } catch (_) {}
+    } catch {}
   });
 
   // Reveal choreography with automatic stagger.
