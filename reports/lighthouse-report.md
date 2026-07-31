@@ -1,13 +1,14 @@
-# Performans ve kalite notu
+# Performans ve yayın hazırlığı
 
-Bu teslimde tahmini Lighthouse puanı yazılmamıştır. Bunun yerine sonuçları tekrarlanabilir olan statik paket ve gerçek tarayıcı kontrolleri uygulanmıştır:
+Kontrol tarihi: 31 Temmuz 2026
 
-- Yerel CSS, JavaScript, font ve görsel varlıkları
-- CDN veya sunucu tarafı bağımlılığı yok
-- Modern WebP görseller ve boyutlandırılmış yedek PNG/JPEG dosyaları
-- Gecikmeli görsel yükleme ve `content-visibility`
-- 20 sayfada mobil/masaüstü yatay taşma ve kırık görsel taraması
-- Tekil başlık, meta, canonical, dahili bağlantı ve dosya yolu kontrolleri
-- Hareket azaltma tercihine uyum
+- Site tamamen statik HTML, CSS ve JavaScript olarak üretildi.
+- Harici CDN, Bootstrap veya jQuery bağımlılığı kullanılmadı.
+- Görseller WebP ve JPEG alternatifleriyle yerel olarak paketlendi.
+- Fontlar yerel dosyalardan yükleniyor.
+- Masaüstü ve mobil hero görselleri ayrı kaynaklardan sunuluyor.
+- Görsellerin boyutları HTML içinde tanımlandı.
+- Hareketli geçişler `prefers-reduced-motion` tercihini gözetiyor.
+- Otomatik testte 1.559 dosya, bağlantı, içerik ve yapı kontrolü geçti.
 
-Ayrıntılı sonuçlar `test-results.md` ve `browser-qa.md` dosyalarındadır.
+Not: Bu rapor bir Lighthouse puanı iddiasında bulunmaz; yerel statik paket üzerinde yapılan yayın hazırlığı kontrollerini kaydeder.

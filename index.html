@@ -32,16 +32,8 @@
 </head>
 <body class="">
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span class="service-area">Hizmet bölgemiz: Darende · Malatya · Türkiye</span>
-      <div class="topbar-links">
-        <a href="tel:+905454644452" aria-label="Darende Ajans'ı ara">0545 464 44 52</a>
-        <a href="mailto:darendeajans@gmail.com">darendeajans@gmail.com</a>
-      </div>
-    </div>
-  </div>
-  <header class="site-header">
+  <div class="home-top-accent" aria-hidden="true"></div>
+  <header class="site-header home-site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="Darende Ajans ana sayfa">
     <picture>
@@ -85,12 +77,18 @@
     </div>
   </header>
   <main id="main-content">
-    <section class="hero">
+    <section class="hero hero-banner-home">
+    <picture class="hero-backdrop" aria-hidden="true">
+      <source media="(max-width: 767px)" type="image/webp" srcset="assets/images/hero-home-mobile.webp">
+      <source type="image/webp" srcset="assets/images/hero-home-desktop.webp">
+      <source media="(max-width: 767px)" srcset="assets/images/hero-home-mobile.jpg">
+      <img src="assets/images/hero-home-desktop.jpg" width="1920" height="1080" alt="">
+    </picture>
     <div class="container">
       <div class="row hero-grid">
-        <div class="col-12 col-lg-7 hero-copy">
+        <div class="col-12 hero-copy">
           <p class="eyebrow">Darende · Malatya · Türkiye</p>
-          <h1 class="hero-title"><span>Darende’nin</span><span>dijital gücünü</span><span>birlikte büyütelim.</span></h1>
+          <h1 class="hero-title"><span>Darende’nin</span><span>dijital gücünü</span><span>birlikte</span><span>büyütelim.</span></h1>
           <p class="rotating-line">Markanız için <span class="rotating-word">Web Tasarım</span></p>
           <p class="lead">Hızlı web deneyimi, yerel görünürlük ve ölçülebilir reklamla işletmenizin dijital yolunu sadeleştiriyoruz.</p>
           <div class="button-row">
@@ -99,29 +97,6 @@
           </div>
           <div class="hero-note">
             <span>Şeffaf kapsam</span><span>Sahte vaat yok</span><span>Mobil öncelikli</span>
-          </div>
-        </div>
-        <div class="col-12 col-lg-5 hero-visual" aria-label="Darende’den dijitale açılan ışık ağı">
-          <div class="hero-stage" data-kinetic>
-            <span class="stage-grid" aria-hidden="true"></span>
-            <span class="portal-ring portal-ring-a" aria-hidden="true"></span>
-            <span class="portal-ring portal-ring-b" aria-hidden="true"></span>
-            <span class="portal-ring portal-ring-c" aria-hidden="true"></span>
-            <span class="light-comet light-comet-a" aria-hidden="true"></span>
-            <span class="light-comet light-comet-b" aria-hidden="true"></span>
-            <div class="signal-core">
-              <span>DİJİTAL SİNYAL</span>
-              <strong>DARENDE</strong>
-              <em aria-hidden="true">↗</em>
-              <strong>YARIN</strong>
-              <small>STRATEJİ · TASARIM · BÜYÜME</small>
-            </div>
-            <a class="service-node node-web" href="darende-web-tasarim/"><span>01</span>Web Tasarım<small>Deneyim</small></a>
-            <a class="service-node node-seo" href="darende-seo/"><span>02</span>SEO<small>Görünürlük</small></a>
-            <a class="service-node node-ads" href="darende-google-ads/"><span>03</span>Google Ads<small>Talep</small></a>
-            <a class="service-node node-social" href="darende-sosyal-medya-yonetimi/"><span>04</span>Sosyal Medya<small>Bağ</small></a>
-            <div class="stage-status"><i aria-hidden="true"></i><span>Işık ağı aktif</span><strong>Darende → Dijital</strong></div>
-            <span class="stage-particle p-1" aria-hidden="true"></span><span class="stage-particle p-2" aria-hidden="true"></span><span class="stage-particle p-3" aria-hidden="true"></span><span class="stage-particle p-4" aria-hidden="true"></span><span class="stage-particle p-5" aria-hidden="true"></span><span class="stage-particle p-6" aria-hidden="true"></span><span class="stage-particle p-7" aria-hidden="true"></span><span class="stage-particle p-8" aria-hidden="true"></span><span class="stage-particle p-9" aria-hidden="true"></span><span class="stage-particle p-10" aria-hidden="true"></span><span class="stage-particle p-11" aria-hidden="true"></span><span class="stage-particle p-12" aria-hidden="true"></span><span class="stage-particle p-13" aria-hidden="true"></span><span class="stage-particle p-14" aria-hidden="true"></span>
           </div>
         </div>
       </div>
@@ -139,52 +114,106 @@
   <section class="section">
     <div class="container">
       <div class="section-heading"><p class="eyebrow">Dijitalde fark yaratın</p><h2>İhtiyacınız kadar kapsamlı, hedefiniz kadar net.</h2><p class="lead">Hizmetleri ayrı paketler gibi değil, müşteri yolculuğunun birbirini tamamlayan parçaları olarak planlıyoruz.</p></div>
-      <div class="card-grid home-service-grid"><article class="service-card reveal">
-      <span class="card-number">01</span>
-      <h3>Web Tasarım</h3>
-      <p>İşletmenizi yalnızca anlatan değil, müşterinin doğru bilgiye hızla ulaşıp güvenle iletişim kurmasını sağlayan bir dijital merkez tasarlıyoruz.</p>
-      <a class="card-link" href="darende-web-tasarim/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">02</span>
-      <h3>E-Ticaret Çözümleri</h3>
-      <p>Ürünlerinizi yalnızca sergileyen değil; keşiften sepete, ödemeden satış sonrasına kadar müşteriye güven veren bir mağaza deneyimi planlıyoruz.</p>
-      <a class="card-link" href="darende-e-ticaret/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">03</span>
-      <h3>SEO Danışmanlığı</h3>
-      <p>İşletmenizin arama niyetine en uygun sayfalarla bulunmasını; teknik sağlık, faydalı içerik ve yerel güven sinyalleri üzerinden geliştiriyoruz.</p>
-      <a class="card-link" href="darende-seo/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">04</span>
-      <h3>Google Ads</h3>
-      <p>Reklam bütçesini yalnız tıklamaya değil, işletmeniz için anlamlı telefon, form ve satış aksiyonlarına bağlayan bir kampanya yapısı kuruyoruz.</p>
-      <a class="card-link" href="darende-google-ads/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">05</span>
-      <h3>Sosyal Medya ve Meta Ads</h3>
-      <p>Sosyal medyayı yalnız paylaşım takvimi değil; markanın sesini, teklifini ve hedef kitlesiyle kurduğu ilişkiyi yöneten bütünlüklü bir kanal olarak ele …</p>
-      <a class="card-link" href="darende-sosyal-medya-yonetimi/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">06</span>
-      <h3>Google Harita ve Konum Yönetimi</h3>
-      <p>Müşterinin sizi haritada bulduğu anda doğru telefon, çalışma düzeni, hizmet bilgisi ve güven veren içerikle karşılaşmasını sağlıyoruz.</p>
-      <a class="card-link" href="darende-google-harita-yonetimi/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">07</span>
-      <h3>360° Sanal Tur</h3>
-      <p>Mekânın atmosferini, dolaşımını ve öne çıkan alanlarını müşteriye gelmeden önce anlaşılır biçimde gösteren bir dijital deneyim kurguluyoruz.</p>
-      <a class="card-link" href="darende-360-sanal-tur/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">08</span>
-      <h3>Drone ve Tanıtım Filmi</h3>
-      <p>İşletmenizin ölçeğini, çevresini ve insan hikâyesini yalnız güzel görüntülerle değil; net bir anlatı ve kullanım amacıyla filme dönüştürüyoruz.</p>
-      <a class="card-link" href="darende-drone-cekimi/">Hizmeti inceleyin</a>
-    </article><article class="service-card reveal">
-      <span class="card-number">09</span>
-      <h3>Logo ve Kurumsal Kimlik</h3>
-      <p>Markanın karakterini yalnızca bir işaretle değil; farklı mecralarda tutarlı çalışan, anlaşılır ve sürdürülebilir bir görsel sistemle görünür kılıyoruz…</p>
-      <a class="card-link" href="darende-kurumsal-kimlik/">Hizmeti inceleyin</a>
-    </article></div>
+      <div class="card-grid home-service-grid"><article class="service-card service-card-visual service-theme-dark reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-01.webp">
+          <img src="assets/images/service-01.jpg" width="1200" height="750" alt="Web Tasarım hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">01</span>
+          <h3>Web Tasarım</h3>
+          <p>İşletmenizi yalnızca anlatan değil, müşterinin doğru bilgiye hızla ulaşıp güvenle iletişim kurmasını sağlayan bir dijital merkez tasarlıyoruz.</p>
+          <a class="card-link" href="darende-web-tasarim/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-02.webp">
+          <img src="assets/images/service-02.jpg" width="1200" height="750" alt="E-Ticaret Çözümleri hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">02</span>
+          <h3>E-Ticaret Çözümleri</h3>
+          <p>Ürünlerinizi yalnızca sergileyen değil; keşiften sepete, ödemeden satış sonrasına kadar müşteriye güven veren bir mağaza deneyimi planlıyoruz.</p>
+          <a class="card-link" href="darende-e-ticaret/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-03.webp">
+          <img src="assets/images/service-03.jpg" width="1200" height="750" alt="SEO Danışmanlığı hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">03</span>
+          <h3>SEO Danışmanlığı</h3>
+          <p>İşletmenizin arama niyetine en uygun sayfalarla bulunmasını; teknik sağlık, faydalı içerik ve yerel güven sinyalleri üzerinden geliştiriyoruz.</p>
+          <a class="card-link" href="darende-seo/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-04.webp">
+          <img src="assets/images/service-04.jpg" width="1200" height="750" alt="Google Ads hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">04</span>
+          <h3>Google Ads</h3>
+          <p>Reklam bütçesini yalnız tıklamaya değil, işletmeniz için anlamlı telefon, form ve satış aksiyonlarına bağlayan bir kampanya yapısı kuruyoruz.</p>
+          <a class="card-link" href="darende-google-ads/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-05.webp">
+          <img src="assets/images/service-05.jpg" width="1200" height="750" alt="Sosyal Medya ve Meta Ads hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">05</span>
+          <h3>Sosyal Medya ve Meta Ads</h3>
+          <p>Sosyal medyayı yalnız paylaşım takvimi değil; markanın sesini, teklifini ve hedef kitlesiyle kurduğu ilişkiyi yöneten bütünlüklü bir kanal olarak ele …</p>
+          <a class="card-link" href="darende-sosyal-medya-yonetimi/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-dark reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-06.webp">
+          <img src="assets/images/service-06.jpg" width="1200" height="750" alt="Google Harita ve Konum Yönetimi hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">06</span>
+          <h3>Google Harita ve Konum Yönetimi</h3>
+          <p>Müşterinin sizi haritada bulduğu anda doğru telefon, çalışma düzeni, hizmet bilgisi ve güven veren içerikle karşılaşmasını sağlıyoruz.</p>
+          <a class="card-link" href="darende-google-harita-yonetimi/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-07.webp">
+          <img src="assets/images/service-07.jpg" width="1200" height="750" alt="360° Sanal Tur hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">07</span>
+          <h3>360° Sanal Tur</h3>
+          <p>Mekânın atmosferini, dolaşımını ve öne çıkan alanlarını müşteriye gelmeden önce anlaşılır biçimde gösteren bir dijital deneyim kurguluyoruz.</p>
+          <a class="card-link" href="darende-360-sanal-tur/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-08.webp">
+          <img src="assets/images/service-08.jpg" width="1200" height="750" alt="Drone ve Tanıtım Filmi hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">08</span>
+          <h3>Drone ve Tanıtım Filmi</h3>
+          <p>İşletmenizin ölçeğini, çevresini ve insan hikâyesini yalnız güzel görüntülerle değil; net bir anlatı ve kullanım amacıyla filme dönüştürüyoruz.</p>
+          <a class="card-link" href="darende-drone-cekimi/">Hizmeti inceleyin</a>
+        </div>
+      </article><article class="service-card service-card-visual service-theme-light reveal">
+        <picture class="service-card-bg">
+          <source type="image/webp" srcset="assets/images/service-09.webp">
+          <img src="assets/images/service-09.jpg" width="1200" height="750" alt="Logo ve Kurumsal Kimlik hizmetini temsil eden görsel" loading="lazy">
+        </picture>
+        <div class="service-card-content">
+          <span class="card-number">09</span>
+          <h3>Logo ve Kurumsal Kimlik</h3>
+          <p>Markanın karakterini yalnızca bir işaretle değil; farklı mecralarda tutarlı çalışan, anlaşılır ve sürdürülebilir bir görsel sistemle görünür kılıyoruz…</p>
+          <a class="card-link" href="darende-kurumsal-kimlik/">Hizmeti inceleyin</a>
+        </div>
+      </article></div>
     </div>
   </section>
   <section class="section section-cream" id="dijital-skor">
@@ -269,11 +298,32 @@
           <p class="lead">Güçlü dijital iş; etkileyici görünüm kadar doğru bilgi, erişilebilir deneyim ve ölçülebilir sonuç disiplinidir.</p>
         </div>
         <div class="col-12 col-lg-7">
-          <div class="row g-3">
-            <div class="col-12 col-sm-6"><div class="info-card"><h3>Önce anlaşılır mesaj</h3><p>Teknik özelliklerden önce müşterinin neden sizi seçmesi gerektiğini netleştiririz.</p></div></div>
-            <div class="col-12 col-sm-6"><div class="info-card"><h3>Gerçek veriye saygı</h3><p>Olmayan adresi, yorumu, başarıyı veya iş ortaklığını uydurmayız.</p></div></div>
-            <div class="col-12 col-sm-6"><div class="info-card"><h3>Performans bütçesi</h3><p>Görsel hareketi hız ve erişilebilirliğin önüne geçirmeyiz.</p></div></div>
-            <div class="col-12 col-sm-6"><div class="info-card"><h3>Devredilebilir sistem</h3><p>İçeriğinizi ve hesaplarınızı ajansa bağımlı bırakmadan düzenleriz.</p></div></div>
+          <div class="principle-grid">
+            <figure class="principle-visual reveal">
+              <picture>
+                <source type="image/webp" srcset="assets/images/principle-01.webp">
+                <img src="assets/images/principle-01.jpg" width="960" height="540" alt="Darende’den başlayan yakın ve anlaşılır iletişim" loading="lazy">
+              </picture>
+              <figcaption><span>01</span>Yerel bağlantı</figcaption>
+            </figure><figure class="principle-visual reveal">
+              <picture>
+                <source type="image/webp" srcset="assets/images/principle-02.webp">
+                <img src="assets/images/principle-02.jpg" width="960" height="540" alt="Gerçek bilgiye ve kanıtlanabilir çalışmaya bağlılık" loading="lazy">
+              </picture>
+              <figcaption><span>02</span>Doğrulanmış güven</figcaption>
+            </figure><figure class="principle-visual reveal">
+              <picture>
+                <source type="image/webp" srcset="assets/images/principle-03.webp">
+                <img src="assets/images/principle-03.jpg" width="960" height="540" alt="Masaüstü, tablet ve mobilde tutarlı kullanım" loading="lazy">
+              </picture>
+              <figcaption><span>03</span>Her ekranda deneyim</figcaption>
+            </figure><figure class="principle-visual reveal">
+              <picture>
+                <source type="image/webp" srcset="assets/images/principle-04.webp">
+                <img src="assets/images/principle-04.jpg" width="960" height="540" alt="Hedefe, veriye ve gerçek sonuca odaklanan sistem" loading="lazy">
+              </picture>
+              <figcaption><span>04</span>Ölçülebilir büyüme</figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -282,16 +332,58 @@
   <section class="section">
     <div class="container">
       <div class="section-heading"><p class="eyebrow">Çalışma süreci</p><h2>Fikirden desteğe yedi açık adım.</h2></div>
-      <div class="process-line">
-        <div class="process-card reveal"><b>01</b><h3>Analiz</h3><p>İhtiyaç ve mevcut durum</p></div><div class="process-card reveal"><b>02</b><h3>Strateji</h3><p>Hedef ve öncelik</p></div><div class="process-card reveal"><b>03</b><h3>Tasarım</h3><p>Arayüz ve içerik</p></div><div class="process-card reveal"><b>04</b><h3>Geliştirme</h3><p>Hızlı ve sağlam yapı</p></div><div class="process-card reveal"><b>05</b><h3>Test</h3><p>Cihaz ve erişim kontrolü</p></div><div class="process-card reveal"><b>06</b><h3>Yayın</h3><p>Kontrollü geçiş planı</p></div><div class="process-card reveal"><b>07</b><h3>Destek</h3><p>Ölçüm ve iyileştirme</p></div>
+      <div class="process-line visual-process-line">
+        <article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-01.webp">
+            <img src="assets/images/process-01.jpg" width="720" height="720" alt="Analiz aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>01</b><h3>Analiz</h3><p>İhtiyaç ve mevcut durum</p></div>
+        </article><article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-02.webp">
+            <img src="assets/images/process-02.jpg" width="720" height="720" alt="Strateji aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>02</b><h3>Strateji</h3><p>Hedef ve öncelik</p></div>
+        </article><article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-03.webp">
+            <img src="assets/images/process-03.jpg" width="720" height="720" alt="Tasarım aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>03</b><h3>Tasarım</h3><p>Arayüz ve içerik</p></div>
+        </article><article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-04.webp">
+            <img src="assets/images/process-04.jpg" width="720" height="720" alt="Geliştirme aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>04</b><h3>Geliştirme</h3><p>Hızlı ve sağlam yapı</p></div>
+        </article><article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-05.webp">
+            <img src="assets/images/process-05.jpg" width="720" height="720" alt="Test aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>05</b><h3>Test</h3><p>Cihaz ve erişim kontrolü</p></div>
+        </article><article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-06.webp">
+            <img src="assets/images/process-06.jpg" width="720" height="720" alt="Yayın aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>06</b><h3>Yayın</h3><p>Kontrollü geçiş planı</p></div>
+        </article><article class="process-card process-card-visual reveal">
+          <picture class="process-card-media">
+            <source type="image/webp" srcset="assets/images/process-07.webp">
+            <img src="assets/images/process-07.jpg" width="720" height="720" alt="Destek aşamasını temsil eden üç boyutlu görsel" loading="lazy">
+          </picture>
+          <div class="process-card-copy"><b>07</b><h3>Destek</h3><p>Ölçüm ve iyileştirme</p></div>
+        </article>
       </div>
     </div>
   </section>
   <section class="section section-cream">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-12 col-lg-6"><div class="content-card"><p class="eyebrow">Darende’ye özel büyüme</p><h2>Yerel aramada görünür, dijitalde güvenilir olun.</h2><p>Bir işletmenin harita profili, web sitesi ve iletişim bilgileri aynı gerçeği anlatmalı. Yerel müşteri “açık mı, nerede hizmet veriyor, nasıl ulaşırım?” sorularına hızla yanıt bulduğunda dijital temas gerçek talebe dönüşür.</p><a class="card-link" href="darende-isletme-rehberi/">Dijital rehberi okuyun</a></div></div>
-        <div class="col-12 col-lg-6"><div class="content-card"><p class="eyebrow">Müşteri yorumları</p><h2>Doğrulanabilir yorum gelmeden yayın yok.</h2><p>Henüz kullanıcı tarafından sağlanmış, yayın izni doğrulanmış müşteri yorumu bulunmuyor. Güven alanını sahte isim, fotoğraf veya puanla doldurmuyoruz.</p><a class="card-link" href="hakkimizda/">Çalışma ilkelerimizi görün</a></div></div>
+      <div class="row g-4 balanced-content-row">
+        <div class="col-12 col-lg-6"><div class="content-card balanced-content-card"><p class="eyebrow">Darende’ye özel büyüme</p><h2>Yerel aramada görünür, dijitalde güvenilir olun.</h2><p>Bir işletmenin harita profili, web sitesi ve iletişim bilgileri aynı gerçeği anlatmalı. Yerel müşteri “açık mı, nerede hizmet veriyor, nasıl ulaşırım?” sorularına hızla yanıt bulduğunda dijital temas gerçek talebe dönüşür.</p><a class="card-link" href="darende-isletme-rehberi/">Dijital rehberi okuyun</a></div></div>
+        <div class="col-12 col-lg-6"><div class="content-card balanced-content-card"><p class="eyebrow">Müşteri yorumları</p><h2>Doğrulanabilir yorum gelmeden güven alanında yayın yok.</h2><p>Yalnız kaynağı ve yayın izni doğrulanmış müşteri yorumlarını paylaşırız. Doğrulanmış bir yorum bulunmadığı için bu alanı sahte isim, fotoğraf veya puanla doldurmuyoruz.</p><a class="card-link" href="hakkimizda/">Çalışma ilkelerimizi görün</a></div></div>
       </div>
     </div>
   </section>
@@ -323,10 +415,22 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-12 col-lg-5"><div class="section-heading"><p class="eyebrow">İletişim ve hizmet bölgesi</p><h2>Darende’den Türkiye geneline.</h2><p class="lead">Kesin işletme adresi verilmediği için haritada sahte pin göstermiyoruz. Hizmet bölgesi bilgisi iletişim için yeterli ve doğrudur.</p><div class="button-row"><a class="button button-primary" href="tel:+905454644452">0545 464 44 52</a><a class="button button-ghost" href="mailto:darendeajans@gmail.com">E-posta Gönder</a></div></div></div>
-        <div class="col-12 col-lg-7"><div class="region-card"><div class="region-map"><strong>Darende · Malatya</strong></div><p>Hizmet bölgesi: Darende, Malatya ve Türkiye geneli</p></div></div>
+        <div class="col-12 col-lg-7"><div class="region-card"><div class="region-map"><picture class="region-picture">
+    <source type="image/webp" srcset="assets/images/region-turkiye.webp">
+    <img src="assets/images/region-turkiye.jpg" width="1280" height="720" alt="Türkiye genelindeki hizmet ağını gösteren üç boyutlu harita" loading="lazy">
+  </picture></div><p>Hizmet bölgesi: Darende, Malatya ve Türkiye geneli</p></div></div>
       </div>
     </div>
   </section>
+  <a class="whatsapp-float" href="https://wa.me/905454644452?text=Merhaba%20Darende%20Ajans%2C%20dijital%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" aria-label="Darende Ajans ile WhatsApp üzerinden görüşün">
+    <span class="whatsapp-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" focusable="false">
+        <circle cx="16" cy="15.2" r="10.8"></circle>
+        <path d="M8.1 23.1 6.6 28l5-1.4"></path>
+        <path d="M11.2 10.1c.6 4.9 4.4 8.7 9.3 9.4l1.7-2.2 3 1.5-.2 2.6c-.1 1.1-1.1 1.9-2.2 1.8-7.5-.6-13.5-6.5-14-14-.1-1.1.7-2.1 1.8-2.2l2.6-.2 1.5 3-2.2 1.7"></path>
+      </svg>
+    </span><strong>WhatsApp</strong>
+  </a>
   </main>
   <footer class="site-footer">
     <div class="container">

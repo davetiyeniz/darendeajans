@@ -9,7 +9,7 @@
     email: "darendeajans@gmail.com",
     serviceArea: "Darende, Malatya ve Türkiye geneli",
     secondPhone: "",
-    whatsappNumber: "",
+    whatsappNumber: "905454644452",
     address: "",
     mapEmbedUrl: "",
     formEndpoint: "",
